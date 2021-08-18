@@ -1,0 +1,17 @@
+{
+    "title": "RBG",
+    "description" : "All about the RBG customisation",
+    "header": "RGB Requests",
+    "tags": [
+        "\nIf you ever feel like it you can change the RGB values of my background using url parameters.\n\nThere are 2 parameters you can specify:\n• startColour - Bottom left corner value\n• endColour - Top right corner value\n\nBoth are standard hex values, nothing fancy. Here is a quick <a target = \"_self\" href = \"https://lostanddead.co.uk/rgb?startColour=0000ff&endColour=ff0000\">example</a> <-- Click It!\n\n"
+    ],
+    "links": [
+        {
+            "target": "_self",
+            "link": "/extra",
+            "title": "Home",
+            "icon": "fas fa-arrow-left",
+            "internal": true
+        }
+    ]
+}

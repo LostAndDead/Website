@@ -1,0 +1,45 @@
+{
+    "title": "Projects",
+    "description" : "List of all my current/past projects",
+    "header": "Projects",
+    "tags": [
+        "Here is a list of all my current and past projects"
+    ],
+    "links": [
+        {
+            "target": "_self",
+            "link": "./website",
+            "title": "Website",
+            "icon": "fas fa-sitemap",
+            "internal": true
+        },
+        {
+            "target": "_self",
+            "link": "./league-bot",
+            "title": "League Bot",
+            "icon": "fas fa-trophy",
+            "internal": true
+        },
+        {
+            "target": "_self",
+            "link": "./mighty-coco-bot",
+            "title": "Mighty CocoBot",
+            "icon": "fas fa-robot",
+            "internal": true
+        },
+        {
+            "target": "_self",
+            "link": "./custom-capes",
+            "title": "Custom Capes",
+            "icon": "fas fa-wind",
+            "internal": true
+        },
+        {
+            "target": "_self",
+            "link": "/extra",
+            "title": "Home",
+            "icon": "fas fa-arrow-left",
+            "internal": true
+        }
+    ]
+}

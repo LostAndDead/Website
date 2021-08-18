@@ -1,0 +1,31 @@
+{
+    "title": "Extra Stuff",
+    "description" : "Here is a lil extra stuff for ya.",
+    "header": "Extra",
+    "tags": [
+        "Some Extra Links To More Personal And Niche Stuff"
+    ],
+    "links": [
+        {
+            "target": "_self",
+            "link": "/projects",
+            "title": "Projects",
+            "icon": "fas fa-project-diagram",
+            "internal": true
+        },
+        {
+            "target": "_self",
+            "link": "/rgb",
+            "title": "RGB Magic",
+            "icon": "fas fa-palette",
+            "internal": true
+        },
+        {
+            "target": "_self",
+            "link": "/",
+            "title": "Back",
+            "icon": "fas fa-backward",
+            "internal": true
+        }
+    ]
+}

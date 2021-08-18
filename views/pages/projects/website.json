@@ -1,0 +1,24 @@
+{
+    "title": "Website",
+    "description" : "Project - Website",
+    "header": "Website",
+    "tags": [
+        "\nMy personal portfolio website (the one your on)\nBuilt with EJS and pages loaded and created dynamicaly using JSON.\nAlso has cool RGB stuff."
+    ],
+    "links": [
+        {
+            "target": "_blank",
+            "link": "https://github.com/LostAndDead/Website",
+            "title": "Source Code",
+            "icon": "fab fa-github",
+            "internal": false
+        },
+        {
+            "target": "_self",
+            "link": "/projects",
+            "title": "Home",
+            "icon": "fas fa-arrow-left",
+            "internal": true
+        }
+    ]
+}

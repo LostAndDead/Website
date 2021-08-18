@@ -1,0 +1,76 @@
+<!--
+ ====================NOTE====================
+    This code was created by LostAndDead,
+   please don't claim this as your own work
+        https://github.com/LostAndDead
+ ============================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title><%= title %></title>
+        <meta content="LostAndDead - <%= title %>" property="og:title">
+        <meta content="LostAndDead" property="og:site_name">
+        <meta content="<%= description %>" property="og:description">
+        <% if(typeof redirect !== 'undefined') {%> 
+            <meta http-equiv="refresh" content="2 URL=<%= redirect %> " />
+        <% } %> 
+        <meta content='<%= avatarURL %>' property='og:image'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="/js/triangles.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@472&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head> 
+    <body>
+        <div id="bg" style="background: linear-gradient(to top right, #<%= colourData.startColour %>, #<%= colourData.endColour %>)"></div>
+        <div class="main">
+            <% if(typeof headerStrikeThrough !== 'undefined' && headerStrikeThrough == true) {%> 
+                <h1s><%= header %></h1s>
+            <% }else{ %> 
+                <h1><%= header %></h1>
+            <% } %> 
+            <div class="info">
+                <ul>
+                    <% if(typeof tags !== 'undefined') {%> 
+                        <% if(tags.length >= 1) {%> 
+                            <% tags.forEach(function(tag) { %> 
+                                <li>
+                                <% var tagLines = tag.split("\n") %> 
+                                <% tagLines.forEach(function(tagLine) { %> 
+                                    <%- tagLine %><br>
+                                <% }) %> 
+                                </li>
+                            <% }) %> 
+                        <% } %> 
+                    <% } %> 
+                </ul>
+            </div>
+            <div class="socials">
+                <ul>
+                    <% if(typeof links !== 'undefined') {%> 
+                        <% links.forEach(function(link) { %>
+                            <% if( colourData.different && link.internal) {%> 
+                                <a target="<%= link.target %>" href="<%= link.link %>?startColour=<%= colourData.startColour %>&endColour=<%= colourData.endColour %>" title="<%= link.title %>"><li><i class="<%= link.icon %>"></i></li></a>
+                            <% }else{ %> 
+                                <a target="<%= link.target %>" href=<%= link.link %> title="<%= link.title %>"><li><i class="<%= link.icon %>"></i></li></a>
+                            <% } %> 
+                        <% }) %>
+                    <% } %> 
+                </ul>
+            </div>
+        </div>
+        <div class="blt">
+            <% if (typeof blLink !== 'undefined') { %> 
+                <% if( colourData.different && blLink.internal) {%> 
+                    <p><a class="noDecoration" target=<%= blLink.target %>  href="<%= blLink.link %>?startColour=<%= colourData.startColour %>&endColour=<%= colourData.endColour %>" title=<%= blLink.title %>><i class="<%= blLink.icon %>"></i><%= blLink.text %></a></p>
+                <% }else{ %> 
+                    <p><a class="noDecoration" target=<%= blLink.target %>  href=<%= blLink.link %> title=<%= blLink.title %>><i class="<%= blLink.icon %>"></i><%= blLink.text %></a></p>
+                <% } %> 
+            <% } %> 
+        </div>
+    </body>
+</html>

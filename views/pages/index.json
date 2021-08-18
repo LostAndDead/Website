@@ -1,0 +1,69 @@
+{
+    "title": "A Master Of Code",
+    "description" : "I'm LostAndDead! I'm a English student developing discord bots, Java plugins and working on all sorts of projects in my spare time.",
+    "header": "LostAndDead",
+    "tags": [
+        "Student",
+        "English",
+        "Junior Programmer",
+        "All Round Programmer"
+    ],
+    "links": [
+        {
+            "target": "_blank",
+            "link": "https://twitter.com/lostanddead9001",
+            "title": "Twitter",
+            "icon": "fab fa-twitter",
+            "internal": false
+        },
+        {
+            "target": "_blank",
+            "link": "https://www.instagram.com/lostanddead9001/",
+            "title": "Instagramr",
+            "icon": "fab fa-instagram",
+            "internal": false
+        },
+        {
+            "target": "_blank",
+            "link": "https://github.com/LostAndDead/",
+            "title": "Github",
+            "icon": "fab fa-github",
+            "internal": false
+        },
+        {
+            "target": "_blank",
+            "link": "https://discord.bio/p/lostndead",
+            "title": "Discord",
+            "icon": "fab fa-discord",
+            "internal": false
+        },
+        {
+            "target": "_blank",
+            "link": "mailto:lost@lostanddead.co.uk",
+            "title": "Twitter",
+            "icon": "fas fa-envelope",
+            "internal": false
+        },
+        {
+            "target": "_blank",
+            "link": "https://namemc.com/profile/LostAndDead.1",
+            "title": "Twitter",
+            "icon": "fas fa-cube",
+            "internal": false
+        },
+        {
+            "target": "_self",
+            "link": "/extra",
+            "title": "Extra",
+            "icon": "fas fa-ellipsis-h",
+            "internal": true
+        }
+    ],
+    "blLink" : {
+        "target": "_self",
+        "link": "/test",
+        "text": " To The Test Site",
+        "icon": "fas fa-arrow-left",
+        "internal": true
+    }
+}

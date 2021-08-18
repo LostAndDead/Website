@@ -1,0 +1,31 @@
+{
+    "title": "Mighty CocoBot",
+    "description" : "Project - Mighty CocoBot",
+    "header": "Mighty CocoBot",
+    "tags": [
+        "\nA Discord bot designed for the Walkabout Mini Golf server for tracking high scores\nand starting hourly matches for people to join.\nThis was my first project for a massivly public system. It went rather well and is still running good."
+    ],
+    "links": [
+        {
+            "target": "_blank",
+            "link": "https://www.mightycoconut.com/minigolf",
+            "title": "Walkabout Mini Golf",
+            "icon": "fas fa-gamepad",
+            "internal": false
+        },
+        {
+            "target": "_blank",
+            "link": "https://github.com/LostAndDead/Mighty-CocoBot",
+            "title": "Source Code",
+            "icon": "fab fa-github",
+            "internal": false
+        },
+        {
+            "target": "_self",
+            "link": "/projects",
+            "title": "Home",
+            "icon": "fas fa-arrow-left",
+            "internal": true
+        }
+    ]
+}

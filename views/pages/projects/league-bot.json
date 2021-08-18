@@ -1,0 +1,24 @@
+{
+    "title": "League Bot",
+    "description" : "Project - League Bot",
+    "header": "League Bot",
+    "tags": [
+        "\nA Discord bot designed for tracking competitive leagues for any kind of game.\nSelf hostable and customisable as much as you wish.\n\nWas initaly designed for my Dad and his many VR golfing endevors but has since been adapted to work with most games."
+    ],
+    "links": [
+        {
+            "target": "_blank",
+            "link": "https://github.com/LostAndDead/League-Bot",
+            "title": "Source Code",
+            "icon": "fab fa-github",
+            "internal": false
+        },
+        {
+            "target": "_self",
+            "link": "/projects",
+            "title": "Home",
+            "icon": "fas fa-arrow-left",
+            "internal": true
+        }
+    ]
+}

@@ -8,28 +8,28 @@
     "links": [
         {
             "target": "_self",
-            "link": "./website",
+            "link": "/projects/website",
             "title": "Website",
             "icon": "fas fa-sitemap",
             "internal": true
         },
         {
             "target": "_self",
-            "link": "./league-bot",
+            "link": "/projects/league-bot",
             "title": "League Bot",
             "icon": "fas fa-trophy",
             "internal": true
         },
         {
             "target": "_self",
-            "link": "./mighty-coco-bot",
+            "link": "/projects/mighty-coco-bot",
             "title": "Mighty CocoBot",
             "icon": "fas fa-robot",
             "internal": true
         },
         {
             "target": "_self",
-            "link": "./custom-capes",
+            "link": "/projects/custom-capes",
             "title": "Custom Capes",
             "icon": "fas fa-wind",
             "internal": true

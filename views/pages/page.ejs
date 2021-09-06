@@ -72,5 +72,32 @@
                 <% } %> 
             <% } %> 
         </div>
+        <% if (!dismissed) {%> 
+            <div class="wrapper">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>Now Open For Commissions</h3>
+                    <p>I have re-opened my commissions! If you are interested then click the link bellow</p>
+                    <div class="buttons">
+                        <a href="https://tczzdny5nhz.typeform.com/to/IUuJDOYh" target="_blank">Check It Out!</a>
+                    </div>
+                    <div class="buttons">
+                        <button>Not Interested</button>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+        <script>
+            const cookieBox = document.querySelector(".wrapper"),
+            acceptBtn = cookieBox.querySelector("button");
+            acceptBtn.onclick = ()=>{
+                document.cookie = "Commission=dismissed; max-age="+60*60*24*30;
+                if(document.cookie){
+                    cookieBox.classList.add("hide");
+                }else{
+                    alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+                }
+            }
+        </script>
     </body>
 </html>

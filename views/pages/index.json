@@ -52,6 +52,13 @@
             "internal": false
         },
         {
+            "target": "_blank",
+            "link": "https://www.buymeacoffee.com/lostanddead",
+            "title": "Buy Me A Coffee",
+            "icon": "fas fa-hand-holding-usd",
+            "internal": false
+        },
+        {
             "target": "_self",
             "link": "/extra",
             "title": "Extra",

@@ -6,6 +6,16 @@ var refreshTimeout,
     points,
     refreshDuration = 1e4;
 function onLoad() {
+
+    console.log(`
+====================NOTE====================
+   This code was created by LostAndDead,
+  please don't claim this as your own work
+       https://github.com/LostAndDead
+============================================
+`);
+    console.log("NGMgMzIgNzQgNTggNGQgMzIgNWEgNTQgNTEgNmMgNjMgNzkgNTIgNTUgMzUgNGQgNGUgNTUgNjQgNGIgNGQgNmEgNTIgN2EgNjIgNTQgNGEgNGY=");
+
     var t = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     t.setAttribute("width", window.innerWidth),
         t.setAttribute("height", window.innerHeight),

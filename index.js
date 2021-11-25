@@ -26,7 +26,6 @@ app.get('/', function (req, res) {
     var colourData = getColourData(req)
     page.avatarURL = avatarURL
     page.colourData = colourData
-    page.dismissed = req.cookies["Commission"] == "dismissed"
     res.render('pages/page', page)
 })
 
@@ -35,7 +34,6 @@ app.get('/extra', function (req, res) {
     var colourData = getColourData(req)
     page.avatarURL = avatarURL
     page.colourData = colourData
-    page.dismissed = req.cookies["Commission"] == "dismissed"
     res.render('pages/page', page)
 })
 
@@ -44,7 +42,6 @@ app.get('/test', function (req, res) {
     var colourData = getColourData(req)
     page.avatarURL = avatarURL
     page.colourData = colourData
-    page.dismissed = req.cookies["Commission"] == "dismissed"
     res.render('pages/page', page)
 })
 
@@ -53,7 +50,6 @@ app.get('/rgb', function (req, res) {
     var colourData = getColourData(req)
     page.avatarURL = avatarURL
     page.colourData = colourData
-    page.dismissed = req.cookies["Commission"] == "dismissed"
     res.render('pages/page', page)
 })
 
@@ -62,7 +58,22 @@ app.get('/projects', function (req, res) {
     var colourData = getColourData(req)
     page.avatarURL = avatarURL
     page.colourData = colourData
-    page.dismissed = req.cookies["Commission"] == "dismissed"
+    res.render('pages/page', page)
+})
+
+app.get('/kW3fSBW2ENL5GJ24sm2N', function (req, res) {
+    const page = require(`./views/pages/secret-1.json`)
+    var colourData = getColourData(req)
+    page.avatarURL = avatarURL
+    page.colourData = colourData
+    res.render('pages/page', page)
+})
+
+app.get('/4zANfTnhkx5A6ZGXm9gB', function (req, res) {
+    const page = require(`./views/pages/secret-2.json`)
+    var colourData = getColourData(req)
+    page.avatarURL = avatarURL
+    page.colourData = colourData
     res.render('pages/page', page)
 })
 
@@ -72,13 +83,11 @@ app.get('/projects/:project', function (req, res) {
         const page = require(`./views/pages/projects/${req.params.project}.json`)
         page.avatarURL = avatarURL
         page.colourData = colourData
-        page.dismissed = req.cookies["Commission"] == "dismissed"
         res.render('pages/page', page)
     }else{
         const page = require('./views/pages/404.json')
         page.avatarURL = avatarURL
         page.colourData = colourData
-        page.dismissed = req.cookies["Commission"] == "dismissed"
         res.render('pages/page', page)
     }
     
@@ -114,6 +123,6 @@ app.get('*', function (req, res) {
     var colourData = getColourData(req)
     page.avatarURL = avatarURL
     page.colourData = colourData
-    page.dismissed = req.cookies["Commission"] == "dismissed"
+    
     res.render('pages/page', page)
 })

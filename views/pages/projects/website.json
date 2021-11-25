@@ -3,16 +3,9 @@
     "description" : "Project - Website",
     "header": "Website",
     "tags": [
-        "\nMy personal portfolio website (the one your on)\nBuilt with EJS and pages loaded and created dynamicaly using JSON.\nAlso has cool RGB stuff."
+        "\nMy personal portfolio website (the one your on)\nBuilt with EJS and pages loaded and created dynamicaly using JSON.\nAlso has cool RGB stuff.\nThis used to be open source but I have since privatised to keep a secret..."
     ],
     "links": [
-        {
-            "target": "_blank",
-            "link": "https://github.com/LostAndDead/Website",
-            "title": "Source Code",
-            "icon": "fab fa-github",
-            "internal": false
-        },
         {
             "target": "_self",
             "link": "/projects",

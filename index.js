@@ -12,7 +12,7 @@ const defaultStartColour = "c33764"
 const defaultEndColour = "1d2671"
 
 app.use(express.static('public'))
-app.use(cookieParser())
+app.use(require('sanitize').middleware);
 
 app.set('view engine', 'ejs')
 
@@ -79,8 +79,9 @@ app.get('/4zANfTnhkx5A6ZGXm9gB', function (req, res) {
 
 app.get('/projects/:project', function (req, res) {
     var colourData = getColourData(req)
-    if(fs.existsSync(`./views/pages/projects/${req.params.project}.json`)){
-        const page = require(`./views/pages/projects/${req.params.project}.json`)
+    var project = req.paramString('project').toLocaleLowerCase()
+    if(fs.existsSync(`./views/pages/projects/${project}.json`)){
+        const page = require(`./views/pages/projects/${project}.json`)
         page.avatarURL = avatarURL
         page.colourData = colourData
         res.render('pages/page', page)
@@ -98,11 +99,11 @@ function getColourData(req){
     let endColour = defaultEndColour
 
     if (req.query.startColour){
-        startColour = req.query.startColour.toLocaleLowerCase()
+        startColour = req.queryString('startColour').toLocaleLowerCase()
     }
 
     if (req.query.endColour){
-        endColour = req.query.endColour.toLocaleLowerCase()
+        endColour = req.queryString('endColour').toLocaleLowerCase()
     }
 
     var colourData = {}

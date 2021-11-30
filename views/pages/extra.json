@@ -24,7 +24,7 @@
             "target": "_self",
             "link": "/",
             "title": "Back",
-            "icon": "fas fa-backward",
+            "icon": "fas fa-arrow-left",
             "internal": true
         }
     ]

@@ -6,7 +6,7 @@ const fs = require('fs')
 let app = express()
 app.enable('trust proxy')
 
-const port = 20002
+const port = 80
 const avatarURL = "https://cdn.discordapp.com/avatars/329353232570908682/7520f342b875b14860ff1ffa5532805f.webp?size=256"
 const defaultStartColour = "c33764"
 const defaultEndColour = "1d2671"

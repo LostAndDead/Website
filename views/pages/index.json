@@ -19,7 +19,7 @@
         {
             "target": "_blank",
             "link": "https://www.instagram.com/lostanddead9001/",
-            "title": "Instagramr",
+            "title": "Instagram",
             "icon": "fab fa-instagram",
             "internal": false
         },
@@ -40,14 +40,14 @@
         {
             "target": "_blank",
             "link": "mailto:lost@lostanddead.co.uk",
-            "title": "Twitter",
+            "title": "Email Me",
             "icon": "fas fa-envelope",
             "internal": false
         },
         {
             "target": "_blank",
             "link": "https://namemc.com/profile/LostAndDead.1",
-            "title": "Twitter",
+            "title": "Name MC",
             "icon": "fas fa-cube",
             "internal": false
         },

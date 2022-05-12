@@ -1,6 +1,5 @@
 const express = require('express')
 const ejs = require('ejs')
-var cookieParser = require('cookie-parser')
 const fs = require('fs')
 
 let app = express()

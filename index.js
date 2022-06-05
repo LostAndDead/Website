@@ -6,7 +6,7 @@ let app = express()
 app.enable('trust proxy')
 
 const port = 80
-const avatarURL = "https://cdn.discordapp.com/avatars/329353232570908682/7520f342b875b14860ff1ffa5532805f.webp?size=256"
+const avatarURL = "https://cdn.discordapp.com/avatars/329353232570908682/9d0500a6d30c44f0c7509787db7fe80f.webp?size=256"
 const defaultStartColour = "c33764"
 const defaultEndColour = "1d2671"
 
@@ -74,6 +74,18 @@ app.get('/4zANfTnhkx5A6ZGXm9gB', function (req, res) {
     page.avatarURL = avatarURL
     page.colourData = colourData
     res.render('pages/page', page)
+})
+
+app.get('/nice_opinion.png', function (req, res) {
+    var userAgent = req.headers['user-agent']
+    var isDiscord = userAgent.includes("https://discordapp.com") || userAgent.includes("Mozilla/5.0 (Macintosh; Intel Mac OS X 11.6; rv:92.0) Gecko/20100101 Firefox/92.0")
+    console.log(userAgent);
+    console.log(isDiscord);
+    if (isDiscord){
+        res.sendFile(__dirname + '/public/images/nice_opinion.png');
+    }else{
+        res.redirect('https://www.youtube.com/watch?v=CXArovLJ60A');
+    }
 })
 
 app.get('/projects/:project', function (req, res) {

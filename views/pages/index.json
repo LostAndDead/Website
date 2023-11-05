@@ -1,11 +1,11 @@
 {
-    "title": "A Master Of Code",
-    "description" : "I'm LostAndDead! I'm a English student developing discord bots, Java plugins and working on all sorts of projects in my spare time.",
+    "title": "LostAndDead - Still Alive",
+    "description": "I'm LostAndDead! I'm a student currently studying cybersecurity at university. I do odd programming projects and play games in my free time.",
     "header": "LostAndDead",
     "tags": [
-        "Student",
+        "Cyber Security Student",
         "English",
-        "Junior Programmer",
+        "Theme Park Operator",
         "All Round Programmer"
     ],
     "links": [
@@ -32,7 +32,7 @@
         },
         {
             "target": "_blank",
-            "link": "https://discord.bio/p/lostndead",
+            "link": "https://discords.com/bio/p/lostndead",
             "title": "Discord",
             "icon": "fab fa-discord",
             "internal": false
